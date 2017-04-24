@@ -1,0 +1,1257 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <title>PhuongNguyen</title>
+    
+    
+    <link href="Scripts/style.css" rel="stylesheet" type="text/css" />
+<link href="Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="Scripts/jQuery/jquery-2.1.4.min.js" type="text/javascript"></script>
+  
+
+</head>
+<body ng-app="appMain" style="">
+        <div id="fb-root"></div>
+    
+    
+
+
+    
+        <div class="header">
+
+
+    <section class="top-link clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav topmenu-contact">
+                        <li><i class="fa fa-phone"></i>Hotline:01685527550</li>
+                    </ul>
+                        <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
+                            <li class="hotline"><a href="#"><i class="fa fa-phone"></i>Hotline:01685527550</a></li>
+                            <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
+                            <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                            <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập </a></li>
+                            <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký </a></li>
+                        </ul>
+                    <div class="show-mobile hidden-lg hidden-md">
+                        <div class="quick-user">
+                            <div class="quickaccess-toggle">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="inner-toggle">
+                                <ul class="login links">
+                                    <li>
+                                        <a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dang-nhap.html"><i class="fa fa-key"></i>Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quick-access">
+                            <div class="quickaccess-toggle">
+                                <i class="fa fa-list"></i>
+                            </div>
+                            <div class="inner-toggle">
+                                <ul class="links">
+                                    <li><a id="mobile-wishlist-total" href="/kiem-tra-don-hang.html" class="wishlist"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
+                                    <li><a href="/gio-hang.html" class="shoppingcart"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="header-content clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12 col-sm-12 header-left text-center">
+                        <div class="logo">
+                            <a href="/" title="">
+                                <img alt="PhuongNguyen" src="Images\logo2.png" class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-xs-12 col-sm-12 header-right">
+                        <div class="sale-policy clearfix hidden-sm hidden-xs">
+                            <ul class="clearfix">
+                                <li class="shipping">
+                                    <i class="fa fa-truck"></i><span>
+                                        Giao hàng miễn phí
+                                    </span>
+                                </li>
+                                <li class="payment">
+                                    <i class="fa fa-money"></i><span>
+                                        Thanh toán linh hoạt
+                                    </span>
+                                </li>
+                                <li class="return">
+                                    <i class="fa fa-refresh"></i><span>
+                                        Trả hàng trong 30 ngày
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart">
+                            <div class="heading">
+                                <a href="/gio-hang.html">
+                                 </span><i class="fa fa-cart-plus"></i>
+                                    
+                                        0
+                                        sp - 0đ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search hidden-sm hidden-xs">
+                            <div class="input-cat form-search clearfix">
+                                <div class="form-search-controls">
+                                    <input type="text" name="search" id="txtsearch" onblur="if(this.value=='')this.value='Tìm kiếm...'"
+                                           onfocus="if(this.value=='Tìm kiếm...')this.value=''" value="T&#236;m kiếm..." />
+                                    
+                                </div>
+                                <button class="btn btn-search" title="Search" type="button" id="btnsearch" value="Search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="social-group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    <section class="navigation-menu clearfix">
+      <div class="container">
+        <div class="menu-top">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="menu-cate menu-quick-select">
+                <div class="menu-cate-title"> <span><i class="fa fa-th-list"></i><a href="/san-pham.html">Danh mục sản phẩm</a></span> <i class="fa fa-chevron-circle-down"></i> </div>
+                <ul class="menu-cate-content">
+                  <li> <a href="/san-pham/hoa-cat-canh-7915"><i class="fa fa-dashboard"></i>Kinh doanh<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-hong-7935">Khởi nghiệp</a> </li>
+                        <li> <a href="#">Marketing - Bán hàng</a> </li>
+                        <li> <a href="#">Quản trị - Lãnh đạo</a> </li>
+                       
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/cam-tu-cau-7943">Đầu tư - Tài chính</a> </li>
+                        <li> <a href="/san-pham/lyly-7936">Kiến thức kinh tế</a> </li>
+                        <li> <a href="/san-pham/cat-tuong-7939">Kinh doanh tổng hợp</a> </li>
+                       
+                       
+                      </ul>
+                    </div>
+                  </li>
+               
+                  <li> <a href="/san-pham/hoa-chau-hoa-gio-treo-7905"><i class="fa fa-tree"></i>Văn học<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-gio-treo-7907">Truyện dài - Tiểu thuyết</a> </li>
+                        <li> <a href="/san-pham/hoa-chau-7947">Thơ - Tản văn</a> </li>
+                        <li> <a href="/san-pham/song-doi-7946">Bút ký - Truyện ngắn</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Giả tưởng</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/thu-hai-duong-7908">Trinh thám</a> </li>
+                        <li> <a href="/san-pham/cuc-cac-loai-7945">Kiếm hiệp</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Hài hước</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tâm lý</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/hoa-lan-7906"><i class="fa fa-gift"></i>Kỹ năng<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/lan-rung-7950">Kỹ năng sống</a> </li>
+                        <li> <a href="/san-pham/dia-lan-7952">Kỹ năng làm việc</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/lan-ho-diep-7951">Hoàn thiện bản thân</a> </li>
+                        <li> <a href="/san-pham/phong-lan-7953">Hướng nghiệp</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/hoa-su-kien-7909"><i class="fa fa-pagelines"></i>Văn hóa - Xã hội<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-tiec-cuoi-7910">Chính trị - Pháp luật</a> </li>
+                        <li> <a href="/san-pham/hoa-hoi-nghi-khach-san-7954">Tôn giáo - Tâm linh</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/hoa-le-hoi-7911">Khoa học xã hội</a> </li>
+                         <li> <a href="/san-pham/hoa-le-hoi-7911">Văn hóa nghệ thuật</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/tieu-canh-san-vuon-7912"><i class="fa fa-leaf"></i>Thiếu nhi<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-4-mua-hoa-bui-7913">Truyện tranh</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Truyện cổ tích</a> </li>
+                     
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Truyện dân gian</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Bài học đạo đức</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                      <li> <a href="/san-pham/tieu-canh-san-vuon-7912"><i class="fa fa-diamond"></i>Sách tiếng anh<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-4-mua-hoa-bui-7913">Education - Teaching</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Fiction - Literature </a> </li>
+                    
+                     <li> <a href="/san-pham/canh-quan-xanh-7914"> Magazines </a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Children's books</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Economics </a> </li>
+                        
+                         <li> <a href="/san-pham/canh-quan-xanh-7914"> Teens </a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  
+                      <li> <a href="/san-pham/tieu-canh-san-vuon-7912"><i class="fa fa-yelp"></i>Sách chuyên ngành<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-4-mua-hoa-bui-7913">Công nghệ thông tin</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">nông nghiệp và thú y </a> </li>
+                     <li> <a href="/san-pham/canh-quan-xanh-7914">Thiết kế và đồ họa</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Kế toán</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Quản trị kinh doanh</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Kiến trúc và xây dựng</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li> <a href="/san-pham/hoa-chau-hoa-gio-treo-7905"><i class="fa fa-tree"></i>Khác<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-gio-treo-7907">Ngôn tình</a> </li>
+                        <li> <a href="/san-pham/hoa-chau-7947">Tác phẩm kinh điển</a> </li>
+                        <li> <a href="/san-pham/song-doi-7946">Văn học nước ngoài</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Khoa học - Công nghệ</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/thu-hai-duong-7908">Tạp chí</a> </li>
+                        <li> <a href="/san-pham/cuc-cac-loai-7945">Tủ sách gia đình</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tuyển tập</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tâm lý</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  
+                  
+                </ul>
+              </div>
+            </div>
+                    <div class="col-md-9 ">
+                        <nav class="navbar nav-menu">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <nav id="mobile-menu" class="mobile-menu collapse navbar-collapse">
+                                <ul class='menu nav navbar-nav'><li class="level0"><a class='' href='/trang-chu.html'><span>Trang chủ</span></a></li>
+<li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
+<li class="level0"><a class='' href='/san-pham.html'><span>Sản phẩm</span></a></li>
+<li class="level0"><a class='' href='/tin-tuc.html'><span>Cẩm nang DLF</span></a></li>
+<li class="level0"><a class='' href='/content/dich-vu.html'><span>Dịch vụ</span></a></li>
+<li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
+</ul class='menu nav navbar-nav'>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var str = location.href.toLowerCase();
+        $("ul.menu li a").each(function () {
+            if (str.indexOf(this.href.toLowerCase()) >= 0) {
+                $("ul.menu li").removeClass("active");
+                $(this).parent().addClass("active");
+            }
+        });
+    });
+</script>
+
+        </div>
+
+
+    
+        <div class="slideshow">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                        
+
+    <!--Begin-->
+  
+    <div class="flexslider slideshow-content" id="bannerheaderhome" ng-controller="moduleController" ng-init="initSlideshowController('Slideshows')">
+       
+                
+                    <iframe src="slider.html" width="910" height="420" style="border:none;margin-top:0px;background-color:#FFF"></iframe>
+
+            
+    </div>
+    </div>
+ 
+                      </div>
+                      </div>
+                      </div>
+                    <!--    <div class="col-md-3">
+    <div class="box-html">
+        <p><img src="Images\Slider\20.jpg" class="img-responsive"></p>
+
+<p><img src="Images\Slider\16.jpg" class="img-responsive"></p>
+    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    --->
+
+    
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12">
+
+
+          
+
+  <section class="product-content clearfix">
+            <h1 class="title clearfix"><span>Sách mới nhất</span></h1>
+         
+    <div class="product-block product-grid clearfix">
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\van hoc\tho\Nếu Gặp Người Ấy Cho Tôi Gửi Lời Chào.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\van hoc\tho\Nhắm mắt lại thấy cả bầu trời.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\van hoc\tho\Ngày trôi về phía cũ.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+          
+             
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\ky nang\lam viec\Nghệ thuật lấy lòng khách hàng.jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Nghệ thuật lấy lòng khách hàng</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" >Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+   
+       </section>
+       <!----sach moi nhat---------->
+
+
+
+  <section class="product-content clearfix">
+            <h1 class="title clearfix"><span>Sách hay nên đọc</span></h1>
+      
+    <div class="product-block product-grid clearfix">
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a12.html" title="A12">
+                            <img src="Images\test\1.jpg" data-original="Uploads/shop292/images/130_1217213915%20(Copy).jpg" alt="A12" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="sale">Bán chạy</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a12.html" title="A12">A12</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                        
+                       
+                                <div class="price">
+                                <span class="price-new">15.000&nbsp;₫</span>
+                              <span class="sale-tag ">-30%</span>
+                                        <span class="price-old">20.000&nbsp₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42459,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a14.html" title="A14">
+                            <img src="Images\test\3.jpg" data-original="Uploads/shop292/images/1416hinh-nen-lang-hoa-doc-dao-voi-nhieu-chung-loai-khac-nhau%20(Copy).jpg" alt="A14" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="new">Mới</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a14.html" title="A14">A14</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42460,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\test\2.jpg" data-original="Uploads/shop292/images/1852_1%20(Copy).jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Ánh nắng của anh</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42461,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Images\test\4.jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Images\test\4.jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Images\test\4.jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Images\test\4.jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+           <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Images\test\4.jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+    </section>
+    
+    <!-------Sach mua nhieu--->
+     <section class="product-content clearfix">
+            <h1 class="title clearfix"><span>Sách mua nhiều</span></h1>
+      
+    <div class="product-block product-grid clearfix">
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a12.html" title="A12">
+                            <img src="Uploads/shop292/images/130_1217213915%20(Copy).jpg" data-original="Uploads/shop292/images/130_1217213915%20(Copy).jpg" alt="A12" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="sale">Bán chạy</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a12.html" title="A12">A12</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">1.135.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42459,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a14.html" title="A14">
+                            <img src="Uploads/shop292/images/1416hinh-nen-lang-hoa-doc-dao-voi-nhieu-chung-loai-khac-nhau%20(Copy).jpg" data-original="Uploads/shop292/images/1416hinh-nen-lang-hoa-doc-dao-voi-nhieu-chung-loai-khac-nhau%20(Copy).jpg" alt="A14" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="new">Mới</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a14.html" title="A14">A14</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42460,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Uploads/shop292/images/1852_1%20(Copy).jpg" data-original="Uploads/shop292/images/1852_1%20(Copy).jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">A019</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42461,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a018.html" title="A018">
+                            <img src="Uploads/shop292/images/1979_1%20(Copy).jpg" data-original="Uploads/shop292/images/1979_1%20(Copy).jpg" alt="A018" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a018.html" title="A018">A018</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42462,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a017.html" title="A017">
+                            <img src="Uploads/shop292/images/14361573016036%20(Copy).jpg" data-original="Uploads/shop292/images/14361573016036%20(Copy).jpg" alt="A017" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a017.html" title="A017">A017</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">470.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42463,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a15.html" title="A15">
+                            <img src="Uploads/shop292/images/gio-hoa-dep%20(Copy).jpg" data-original="Uploads/shop292/images/gio-hoa-dep%20(Copy).jpg" alt="A15" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a15.html" title="A15">A15</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">680.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42464,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a13.html" title="A13">
+                            <img src="Uploads/shop292/images/hoahng%20(Copy).jpg" data-original="Uploads/shop292/images/hoahng%20(Copy).jpg" alt="A13" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a13.html" title="A13">A13</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">530.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42465,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a002.html" title="A002">
+                            <img src="Uploads/shop292/images/32925%20(Copy).jpg" data-original="Uploads/shop292/images/32925%20(Copy).jpg" alt="A002" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="new">Mới</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a002.html" title="A002">A002</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">370.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42470,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+   
+    </section>
+    <!-------end sach mua nhieu---->
+    </div>
+    </div>
+    </div>
+    </div>
+
+<!----ket thuc sach moi nhat------->
+<!-----phan trang---->
+        <div class="navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="?page=1" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                        <li class="active"><a href="?page=1">1</a></li>
+                        <li><a href="?page=2">2</a></li>
+                        <li><a href="?page=3">3</a></li>
+                <li>
+                    <a href="?page=3" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            </div>
+        <!-----ket thuc phan trang---->
+
+<!--Template--
+
+
+
+--End-->
+                    
+
+
+    
+            <div class="partner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+    <!--Begin-->
+   
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+    
+        <div class="footer">
+
+    <div class="footer-content clearfix">
+        <div class="container">
+            <div class="row">
+                    <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                        <div class="item">
+                            <h3>
+                                <span>Giới thiệu</span>
+                            </h3>
+                        </div>
+                            <ul>
+                                                <li>
+                                                    <a href="/gioi-thieu.html">
+                                                        Về chúng tôi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/gioi-thieu.html">
+                                                        Tổng quan về công ty
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/content/chuong-trinh-khuyen-mai.html">
+                                                        Chương trình khuyến mãi
+                                                    </a>
+                                                </li>
+                            </ul>
+                    </div>
+                    <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                        <div class="item">
+                            <h3>
+                                <span>Liên hệ - Hợp tác</span>
+                            </h3>
+                        </div>
+                            <ul>
+                                                <li>
+                                                    <a href="/content/danh-cho-doanh-nghiep.html">
+                                                       Dành cho doanh nghiệp
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/lien-he.html">
+                                                        Liên hệ
+                                                    </a>
+                                                </li>
+                            </ul>
+                    </div>
+                <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            <span>Thông tin công ty</span>
+                        </h3>
+                        <div class="box-address-content">
+                            <b>PhuongNguyen</b>
+                            <p><i class="fa fa-map-marker"></i> 123- Thon 15- Dinh Trang Hoa- Di Linh -Lam Dong</p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:phuongnguyen.dilinh.95@gmail.com">phuongnguyen.dilinh.95@gmail.com</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                Phone: 01685527550
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            <span>Facebook</span>
+                        </h3>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn" data-width="289"
+                             data-height="190" data-colorscheme="dark" data-show-faces="true" data-header="false"
+                             data-stream="false" data-show-border="false">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-twitter "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-box box-letter col-md-3 col-sm-12 col-xs-12 hide">
+                    <div class="item">
+                        <h3>
+                            Đăng ký nhận tin
+                        </h3>
+                        <div class="letter-title">
+                            <span>Hộp thư</span><i class="icon-title"></i>
+                        </div>
+                        <div class="letter-content">
+                            <div class="new-paper">
+                                <div class="input-box">
+                                    <input type="text" name="email" id="txtNewsletter" class="input-text form-control" value="" placeholder="Your Emain Address" />
+                                </div>
+                                <div class="button text-center">
+                                    <a class="btn btn-primary">Nhận tin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+
+</div>
+    
+    <div style="display: none;" id="loading-mask">
+        <div id="loading_mask_loader" class="loader">
+            <img alt="Loading..." src="Images/ajax-loader-main.gif" />
+            <div>
+                Please wait...
+            </div>
+        </div>
+    </div>
+    <a class="back-to-top" href="#" style="display: inline;">
+        <i class="fa fa-angle-up">
+        </i>
+    </a>
+    
+    
+</body>
+</html>
+
+

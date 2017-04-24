@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <title>PhuongNguyen</title>
+    
+    
+    <link href="Scripts/style.css" rel="stylesheet" type="text/css" />
+<link href="Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="Scripts/jQuery/jquery-2.1.4.min.js" type="text/javascript"></script>
+  
+
+</head>
+<body ng-app="appMain" style="">
+        <div id="fb-root"></div>
+    
+    
+
+
+    
+        <div class="header">
+
+
+    <section class="top-link clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav topmenu-contact">
+                        <li><i class="fa fa-phone"></i>Hotline:01685527550</li>
+                    </ul>
+                        <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
+                            <li class="hotline"><a href="#"><i class="fa fa-phone"></i>Hotline:01685527550</a></li>
+                            <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
+                            <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                            <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập </a></li>
+                            <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký </a></li>
+                        </ul>
+                    <div class="show-mobile hidden-lg hidden-md">
+                        <div class="quick-user">
+                            <div class="quickaccess-toggle">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="inner-toggle">
+                                <ul class="login links">
+                                    <li>
+                                        <a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dang-nhap.html"><i class="fa fa-key"></i>Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quick-access">
+                            <div class="quickaccess-toggle">
+                                <i class="fa fa-list"></i>
+                            </div>
+                            <div class="inner-toggle">
+                                <ul class="links">
+                                    <li><a id="mobile-wishlist-total" href="/kiem-tra-don-hang.html" class="wishlist"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
+                                    <li><a href="/gio-hang.html" class="shoppingcart"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="header-content clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12 col-sm-12 header-left text-center">
+                        <div class="logo">
+                            <a href="/" title="">
+                                <img alt="PhuongNguyen" src="Images\logo2.png" class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-xs-12 col-sm-12 header-right">
+                        <div class="sale-policy clearfix hidden-sm hidden-xs">
+                            <ul class="clearfix">
+                                <li class="shipping">
+                                    <i class="fa fa-truck"></i><span>
+                                        Giao hàng miễn phí
+                                    </span>
+                                </li>
+                                <li class="payment">
+                                    <i class="fa fa-money"></i><span>
+                                        Thanh toán linh hoạt
+                                    </span>
+                                </li>
+                                <li class="return">
+                                    <i class="fa fa-refresh"></i><span>
+                                        Trả hàng trong 30 ngày
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart">
+                            <div class="heading">
+                                <a href="/gio-hang.html">
+                                 </span><i class="fa fa-cart-plus"></i>
+                                    
+                                        0
+                                        sp - 0đ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search hidden-sm hidden-xs">
+                            <div class="input-cat form-search clearfix">
+                                <div class="form-search-controls">
+                                    <input type="text" name="search" id="txtsearch" onblur="if(this.value=='')this.value='Tìm kiếm...'"
+                                           onfocus="if(this.value=='Tìm kiếm...')this.value=''" value="T&#236;m kiếm..." />
+                                    
+                                </div>
+                                <button class="btn btn-search" title="Search" type="button" id="btnsearch" value="Search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="social-group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="navigation-menu clearfix">
+      <div class="container">
+        <div class="menu-top">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="menu-cate menu-quick-select">
+                <div class="menu-cate-title"> <span><i class="fa fa-th-list"></i><a href="/san-pham.html">Danh mục sản phẩm</a></span> <i class="fa fa-chevron-circle-down"></i> </div>
+                <ul class="menu-cate-content">
+                  <li> <a href="/san-pham/hoa-cat-canh-7915"><i class="fa fa-dashboard"></i>Kinh doanh<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-hong-7935">Khởi nghiệp</a> </li>
+                        <li> <a href="#">Marketing - Bán hàng</a> </li>
+                        <li> <a href="#">Quản trị - Lãnh đạo</a> </li>
+                       
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/cam-tu-cau-7943">Đầu tư - Tài chính</a> </li>
+                        <li> <a href="/san-pham/lyly-7936">Kiến thức kinh tế</a> </li>
+                        <li> <a href="/san-pham/cat-tuong-7939">Kinh doanh tổng hợp</a> </li>
+                       
+                       
+                      </ul>
+                    </div>
+                  </li>
+               
+                  <li> <a href="/san-pham/hoa-chau-hoa-gio-treo-7905"><i class="fa fa-tree"></i>Văn học<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-gio-treo-7907">Truyện dài - Tiểu thuyết</a> </li>
+                        <li> <a href="/san-pham/hoa-chau-7947">Thơ - Tản văn</a> </li>
+                        <li> <a href="/san-pham/song-doi-7946">Bút ký - Truyện ngắn</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Giả tưởng</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/thu-hai-duong-7908">Trinh thám</a> </li>
+                        <li> <a href="/san-pham/cuc-cac-loai-7945">Kiếm hiệp</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Hài hước</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tâm lý</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/hoa-lan-7906"><i class="fa fa-gift"></i>Kỹ năng<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/lan-rung-7950">Kỹ năng sống</a> </li>
+                        <li> <a href="/san-pham/dia-lan-7952">Kỹ năng làm việc</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/lan-ho-diep-7951">Hoàn thiện bản thân</a> </li>
+                        <li> <a href="/san-pham/phong-lan-7953">Hướng nghiệp</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/hoa-su-kien-7909"><i class="fa fa-pagelines"></i>Văn hóa - Xã hội<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-tiec-cuoi-7910">Chính trị - Pháp luật</a> </li>
+                        <li> <a href="/san-pham/hoa-hoi-nghi-khach-san-7954">Tôn giáo - Tâm linh</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/hoa-le-hoi-7911">Khoa học xã hội</a> </li>
+                         <li> <a href="/san-pham/hoa-le-hoi-7911">Văn hóa nghệ thuật</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li> <a href="/san-pham/tieu-canh-san-vuon-7912"><i class="fa fa-leaf"></i>Thiếu nhi<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-4-mua-hoa-bui-7913">Truyện tranh</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Truyện cổ tích</a> </li>
+                     
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Truyện dân gian</a> </li>
+                        <li> <a href="/san-pham/canh-quan-xanh-7914">Bài học đạo đức</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  <li> <a href="/san-pham/hoa-chau-hoa-gio-treo-7905"><i class="fa fa-tree"></i>Khác<span class="arrow-menu"><i class="fa fa-chevron-right "></i></span></a>
+                    <div class="sub-menu hidden-xs">
+                      <ul class="colum0">
+                        <li> <a href="/san-pham/hoa-gio-treo-7907">Ngôn tình</a> </li>
+                        <li> <a href="/san-pham/hoa-chau-7947">Tác phẩm kinh điển</a> </li>
+                        <li> <a href="/san-pham/song-doi-7946">Văn học nước ngoài</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Khoa học - Công nghệ</a> </li>
+                      </ul>
+                      <ul class="colum1">
+                        <li> <a href="/san-pham/thu-hai-duong-7908">Tạp chí</a> </li>
+                        <li> <a href="/san-pham/cuc-cac-loai-7945">Tủ sách gia đình</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tuyển tập</a> </li>
+                        <li> <a href="/san-pham/tulip-7948">Tâm lý</a> </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-9 ">
+              <nav class="navbar nav-menu">
+                <div class="navbar-header">
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <nav id="mobile-menu" class="mobile-menu collapse navbar-collapse">
+                  <ul class='menu nav navbar-nav'>
+                    <li class="level0"><a class='<a class="color1" href="index.html">Home</a>' href='/trang-chu.html'><span>Trang chủ</span></a></li>
+                    <li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
+                    <li class="level0"><a class='' href='/san-pham.html'><span>Sản phẩm</span></a></li>
+                    <li class="level0"><a class='' href='/tin-tuc.html'><span>Cẩm nang DLF</span></a></li>
+                    <li class="level0"><a class='' href='/content/dich-vu.html'><span>Dịch vụ</span></a></li>
+                    <li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
+                  </ul class='menu nav navbar-nav'>
+                </nav>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var str = location.href.toLowerCase();
+        $("ul.menu li a").each(function () {
+            if (str.indexOf(this.href.toLowerCase()) >= 0) {
+                $("ul.menu li").removeClass("active");
+                $(this).parent().addClass("active");
+            }
+        });
+    });
+</script> 
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="breadcrumb clearfix">
+            <ul>
+              <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home"> <a title="Đến trang chủ" href="/" itemprop="url"><span itemprop="title">Trang chủ</span></a> </li>
+              <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="category17 icon-li">
+                <div class="link-site-more"> <a title="" href="/san-pham/hoa-cat-canh-7915" itemprop="url"> <span itemprop="title">Kinh tế</span> </a> </div>
+              </li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+    $(".link-site-more").hover(function () { $(this).find(".s-c-n").show(); }, function () { $(this).find(".s-c-n").hide(); });
+</script>
+          
+              
+              <!-----bat dau chon loc--->
+        
+           
+           
+           
+            
+            
+            
+       
+
+ <div class="btn-group pull-left sort-box has-separator open">
+            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                                <span class="title">Sản phẩm chọn lọc</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="sort-list dropdown-menu" role="menu">
+                <li data-order="top_seller"><a href="javascript:void(0);">Bán chạy nhất</a></li>
+                <li data-order="discount_percent,desc"><a href="javascript:void(0);">Giảm giá nhiều nhất</a></li>
+                <li data-order="newest"><a href="javascript:void(0);">Hàng mới nhập</a></li>
+                                <li data-order="publication_date,desc"><a href="javascript:void(0);">Ngày xuất bản</a></li>
+                                <li data-order="price,asc"><a href="javascript:void(0);">Giá: Thấp đến Cao</a></li>
+                <li data-order="price,desc"><a href="javascript:void(0);">Giá: Cao đến Thấp</a></li>
+                                <li data-order="position"><a href="javascript:void(0);">Sản phẩm chọn lọc</a></li>
+                            </ul>
+                            
+      
+        </div>
+        <!-- Best discounts -->
+        <div class="btn-group pull-left sort-box">
+            <button class="
+                        btn
+                        btn-default
+                        btn-sm
+                        js-sort-btn
+                                            " type="button" data-order="discount_percent,desc">
+                <span class="title">Giảm giá nhiều nhất</span>
+            </button>
+        </div>
+
+        <!-- Best sellers -->
+        <div class="btn-group pull-left sort-box">
+            <button class="
+                        btn
+                        btn-default
+                        btn-sm
+                        js-sort-btn
+                                            " type="button" data-order="top_seller">
+                <span class="title">Bán chạy nhất</span>
+            </button>
+        </div>
+
+        <!-- Price low to high -->
+        <div class="btn-group pull-left sort-box">
+            <button class="
+                        btn
+                        btn-default
+                        btn-sm
+                        js-sort-btn
+                                            " type="button" data-order="price,asc">
+                <span class="title">Giá: Thấp đến Cao</span>
+            </button>
+        </div>
+
+
+            </nav> 
+            <!---ket thuc sap xep----->
+            <!----bat dau body------>
+            <section class="product-content clearfix">
+            <h1 class="title clearfix"><span>Sách hay nên đọc</span></h1>
+      
+    <div class="product-block product-grid clearfix">
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a12.html" title="A12">
+                            <img src="Images\test\1.jpg" data-original="Uploads/shop292/images/130_1217213915%20(Copy).jpg" alt="A12" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="sale">Bán chạy</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a12.html" title="A12">A12</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                        
+                       
+                                <div class="price">
+                                <span class="price-new">15.000&nbsp;₫</span>
+                              <span class="sale-tag ">-30%</span>
+                                        <span class="price-old">20.000&nbsp₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42459,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a14.html" title="A14">
+                            <img src="Images\test\3.jpg" data-original="Uploads/shop292/images/1416hinh-nen-lang-hoa-doc-dao-voi-nhieu-chung-loai-khac-nhau%20(Copy).jpg" alt="A14" class="img-responsive lazy-img" />
+                        </a>
+                            <span class="new">Mới</span>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a14.html" title="A14">A14</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">830.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42460,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                    <div class="image image-resize">
+                        <a href="/san-pham/a019.html" title="A019">
+                            <img src="Images\test\2.jpg" data-original="Uploads/shop292/images/1852_1%20(Copy).jpg" alt="A019" class="img-responsive lazy-img" />
+                        </a>
+                    </div>
+                    <div class="right-block">
+                        <h2 class="name">
+                            <a href="/san-pham/a019.html" title="A019">Ánh nắng của anh</a>
+                        </h2>
+                        <div class="rating">
+                            <div class="rating-1">
+                                <span class="rating-img">
+                                </span>
+                            </div>
+                        </div>
+                                <div class="price">
+                                        <span class="price-new">420.000&nbsp;₫</span>
+                                </div>
+                                                    <div class="button">
+                                <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42461,1)">Mua</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                  <div class="image image-resize"> <a href="/san-pham/lily-hong.html" title="Lily hồng"> <img src="Images\kd\lanh dao\Thuật ủy quyền và giám sát.jpg" data-original="Uploads/shop292/images/13_1036123%20(Copy).jpg" alt="Lily hồng" class="img-responsive lazy-img" /> </a> </div>
+                  <div class="right-block">
+                    <h2 class="name"> <a href="/san-pham/lily-hong.html" title="Lily hồng">Thuật ủy quyền và giám sát</a> </h2>
+                    <div class="rating">
+                      <div class="rating-1"> <span class="rating-img"> </span> </div>
+                    </div>
+                    <div class="price"> <span class="price-new">0</span> </div>
+                    <div class="button"> <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42484,1)">Mua</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                  <div class="image image-resize"> <a href="/san-pham/cam-chuong-do.html" title="Cẩm chướng đỏ"> <img src="Images\kd\lanh dao\Vì sao ai cũng hài lòng.jpg" data-original="Uploads/shop292/images/27c94d90ec12271%20(Copy).jpg" alt="Cẩm chướng đỏ" class="img-responsive lazy-img" /> </a> </div>
+                  <div class="right-block">
+                    <h2 class="name"> <a href="/san-pham/cam-chuong-do.html" title="Cẩm chướng đỏ">Vì sao ai cũng hài lòng</a> </h2>
+                    <div class="rating">
+                      <div class="rating-1"> <span class="rating-img"> </span> </div>
+                    </div>
+                    <div class="price"> <span class="price-new">0</span> </div>
+                    <div class="button"> <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42485,1)">Mua</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                  <div class="image image-resize"> <a href="/san-pham/cam-chuong-trang.html" title="Cẩm chướng trắng"> <img src="Images\kd\lanh dao\Lãnh đạo luôn ăn sau cùng.jpg" data-original="Uploads/shop292/images/carnat_2%20(Copy).jpg" alt="Cẩm chướng trắng" class="img-responsive lazy-img" /> </a> </div>
+                  <div class="right-block">
+                    <h2 class="name"> <a href="/san-pham/cam-chuong-trang.html" title="Cẩm chướng trắng">Lãnh đạo luôn ăn sau cùng</a> </h2>
+                    <div class="rating">
+                      <div class="rating-1"> <span class="rating-img"> </span> </div>
+                    </div>
+                    <div class="price"> <span class="price-new">0</span> </div>
+                    <div class="button"> <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42486,1)">Mua</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                <div class="product-item">
+                  <div class="image image-resize"> <a href="/san-pham/cam-chuong-vang.html" title="Cẩm chướng v&#224;ng"> <img src="Images\kd\lanh dao\Tìm kiếm Steve Jobs tiếp theo.jpg" data-original="Uploads/shop292/images/Carnation_flower_photo_3%20(Copy).jpg" alt="Cẩm chướng v&#224;ng" class="img-responsive lazy-img" /> </a> </div>
+                  <div class="right-block">
+                    <h2 class="name"> <a href="/san-pham/cam-chuong-vang.html" title="Cẩm chướng v&#224;ng">Tìm kiếm Steve Jobs tiếp theo</a> </h2>
+                    <div class="rating">
+                      <div class="rating-1"> <span class="rating-img"> </span> </div>
+                    </div>
+                    <div class="price"> <span class="price-new">0</span> </div>
+                    <div class="button"> <a class="btn btn-default btn-add-cart" href="javascript:void(0)" onclick="AddToCard(42487,1)">Mua</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Template--
+--End--> 
+        </div>
+       
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer-content clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+            <div class="item">
+              <h3> <span>Giới thiệu</span> </h3>
+            </div>
+            <ul>
+              <li> <a href="/gioi-thieu.html"> Về ch&#250;ng t&#244;i </a> </li>
+              <li> <a href="/gioi-thieu.html"> Tổng quan về c&#244;ng ty </a> </li>
+              <li> <a href="/content/chuong-trinh-khuyen-mai.html"> Chương tr&#236;nh khuyến m&#227;i </a> </li>
+            </ul>
+          </div>
+          <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+            <div class="item">
+              <h3> <span>Li&#234;n hệ - Hợp t&#225;c</span> </h3>
+            </div>
+            <ul>
+              <li> <a href="/content/danh-cho-doanh-nghiep.html"> D&#224;nh cho doanh nghiệp </a> </li>
+              <li> <a href="/lien-he.html"> Li&#234;n hệ </a> </li>
+            </ul>
+          </div>
+          <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+            <div class="item">
+              <h3> <span>Thông tin công ty</span> </h3>
+              <div class="box-address-content"> <b>PhuongNguyen</b>
+                <p><i class="fa fa-map-marker"></i> 123- Thon 15- Dinh Trang Hoa- Di Linh -Lam Dong</p>
+                <p> <i class="fa fa-envelope"></i> <a href="mailto:phuongnguyen.dilinh.95@gmail.com">phuongnguyen.dilinh.95@gmail.com</a> </p>
+                <p> <i class="fa fa-phone"></i> Phone: 01685527550 </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+            <div class="item">
+              <h3> <span>Facebook</span> </h3>
+              <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn" data-width="289"
+                             data-height="190" data-colorscheme="dark" data-show-faces="true" data-header="false"
+                             data-stream="false" data-show-border="false"> </div>
+              <div class="social-icon">
+                <ul>
+                  <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  <li><a target="_blank"><i class="fa fa-twitter "></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box box-letter col-md-3 col-sm-12 col-xs-12 hide">
+            <div class="item">
+              <h3> Đăng ký nhận tin </h3>
+              <div class="letter-title"> <span>Hộp thư</span><i class="icon-title"></i> </div>
+              <div class="letter-content">
+                <div class="new-paper">
+                  <div class="input-box">
+                    <input type="text" name="email" id="txtNewsletter" class="input-text form-control" value="" placeholder="Your Emain Address" />
+                  </div>
+                  <div class="button text-center"> <a class="btn btn-primary">Nhận tin</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+        $(".menu-quick-select ul").hide();
+        $(".menu-quick-select").hover(function () { $(".menu-quick-select ul").show(); }, function () { $(".menu-quick-select ul").hide(); });
+    </script> 
+</div>
+<div style="display: none;" id="loading-mask">
+  <div id="loading_mask_loader" class="loader"> <img alt="Loading..." src="Images/ajax-loader-main.gif" />
+    <div> Please wait... </div>
+  </div>
+</div>
+<a class="back-to-top" href="#" style="display: inline;"> <i class="fa fa-angle-up"> </i> </a>
+</body>
+</html>
